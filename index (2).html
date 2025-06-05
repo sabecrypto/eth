@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bobin Crypto Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ✅ Favicon toegevoegd -->
+  <link rel="icon" href="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-pixel.png" type="image/png">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background: #000;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, #003300, #001a00);
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #FFD700; /* Warmer goudkleur */
+      text-align: center;
+      transition: opacity 1s ease;
+    }
+
+    .loading-text {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+      color: #FFD700; /* Goudkleur toegepast op tekst zelf */
+      text-shadow: 1px 1px 6px rgba(255, 215, 0, 0.4); /* Gouden gloed */
+    }
+
+    .progress-bar-container {
+      width: 300px;
+      height: 12px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 50px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(to right, #00ffcc, #00bfff);
+      animation: loading 5s forwards;
+    }
+
+    .main-content {
+      display: none;
+      padding: 80px 20px;
+      text-align: center;
+      background: #002a1c;
+      color: white;
+      min-height: 100vh;
+    }
+
+    @keyframes loading {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🔥 Loading Screen Start -->
+<div class="loading-screen">
+  <div class="loading-text">🌴 Entering the ETH-Blockchain… 🌴</div>
+  <div class="progress-bar-container">
+    <div class="progress-bar"></div>
+  </div>
+</div>
+
+<!-- ✅ Script to Switch Screens -->
+<script>
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.querySelector('.loading-screen').style.opacity = '0';
+      setTimeout(() => {
+        document.querySelector('.loading-screen').style.display = 'none';
+        document.querySelector('.main-content').style.display = 'block';
+      }, 1000);
+    }, 5200);
+  });
+</script>
+
+</body>
+</html>
+
+<style>
+  .scroll-wrapper {
+    overflow: hidden;
+    background: #00ff99;
+    padding: 12px 0;
+  }
+
+  .scroll-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 30s linear infinite;
+  }
+
+  .scroll-track img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+</style>
+
+<div class="scroll-wrapper">
+  <div class="scroll-track">
+    <!-- Dubbele set afbeeldingen voor naadloos effect -->
+    <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-3.png">
+     <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-4.png">
+ <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-5.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-6.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-7.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-8.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-9.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-10.png">
+ <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-11.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-12.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-13.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-14.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-15.png">
+
+    <!-- Herhaling voor naadloze loop -->
+    <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-3.png">
+     <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-4.png">
+ <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-5.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-6.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-7.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-8.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-9.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-10.png">
+ <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-11.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-12.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-13.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-14.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-15.png">
+  </div>
+</div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bobin Crypto Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Arial', sans-serif;
+      background-color: #002a1c;
+    }
+
+    .top-banner {
+      background: #00ff99;
+      color: black;
+      font-weight: bold;
+      text-align: center;
+      padding: 10px;
+      animation: fadeIn 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    .loading-screen {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+      background-color: #002a1c;
+      background-image: url('JOUW-UPLOAD-URL'); /* Jungle achtergrond */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .loading-text {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .moving-text {
+      color: white;
+      font-size: 20px;
+      animation: floatText 10s infinite linear;
+    }
+
+    @keyframes floatText {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-banner">
+  🚀 $BOBIN SOON LIVE — Launching June 19 @ 18:00 UTC!
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$COCO Official Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #002200, #000);
+      color: white;
+      overflow-x: hidden;
+    }
+    .container {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .countdown {
+      font-size: 2rem;
+      margin: 20px 0;
+      color: gold;
+    }
+    .section {
+      margin: 40px 0;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: gold;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .buttons a:hover {
+      background: orange;
+    }
+    .token-info {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    footer {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: 50px;
+    }
+    .sun {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background: radial-gradient(circle, gold, orange);
+      border-radius: 50%;
+      box-shadow: 0 0 30px gold;
+      z-index: 1;
+      animation: float 6s infinite ease-in-out;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="sun"></div>
+
+
+<style>
+  .main-content {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #003322;
+    color: white;
+  }
+
+  .main-content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+  }
+
+  .main-content p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+
+  .countdown {
+    font-size: 24px;
+    color: #00ff99;
+    margin: 20px 0;
+  }
+
+  .cta-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #00ff99;
+    color: black;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.2s;
+  }
+
+  .cta-buttons a:hover {
+    transform: scale(1.05);
+    background-color: #00e68a;
+  }
+
+  .token-info {
+    background-color: rgba(0,0,0,0.4);
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 700px;
+  }
+
+</style>
+
+<div class="main-content">
+  <h1>🐱 Bobin Crypto - Hold & Earn $PEPE</h1>
+<p>☀️ Bobin Crypto ($BOBIN) is a community-driven memecoin on th Ethereum Blockchain that automatically distributes $PEPE coin as rewards to all $BOBIN holders -  every 5 minutes - no staking, no claiming required✅</p>
+
+<p>🌴With a total supply of 5,000,000,000,000,000 tokens, 100% burned liquidity, and renounced ownership, Bobin is built for transparency and engagement. Launch starts Soon on Uniswap🚀</p>
+
+<p>📄 Bobin Crypto Contract Address - <a href="https://etherscan.io/token/0xAC963aBd50d0a1597B37b1A14BA2ee4508f88aE0" target="_blank" style="color: blue;">0xAC963aBd50d0a1597B37b1A14BA2ee4508f88aE0</a></p>
+  
+  <div class="countdown" id="countdown"></div>
+
+  <div class="cta-buttons">
+      <a href="https://dexscreener.com/ethereum?rankBy=trendingScoreH6&order=desc&boosted=1" target="_blank">🔥 Buy $BOBIN Now 🔥</a>
+      <a href="https://x.com/Bobin_Crypto" target="_blank">🐦 Follow Twitter (X)</a>
+      <a href="https://dexscreener.com/ethereum?rankBy=trendingScoreH6&order=desc&boosted=1" target="_blank">📈 View Chart</a>
+      <a href="https://bobincrypto2025.github.io/whitepaper/" target="_blank">📄 Whitepaper</a>
+    </div>
+
+    <div class="token-info">
+      <p>🐱 Welcome to the Bobin Crypto Community!</p>
+      <p>💸 Auto-paid passive $PEPE coin rewards every 5 minutes</p>
+      <p>🐟 Total Supply: 5,000,000,000,000,000 $BOBIN</p>
+      <p>💎 Ethereum ($ETH) Blockchain</p>
+      <p>🚀 Launching on Uniswap</p>
+      <p>✅ Ownership Renounced</p>
+      <p>🔥 100% Liquidity Burned Forever</p>
+      <p>🐸 Fueled by $PEPE</p>
+    </div>
+  </div>
+
+<script>
+  var launchDate = new Date("June 19, 2025 18:00:00 UTC").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var distance = launchDate - now;
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    document.getElementById("countdown").innerHTML =
+      "⏳ Launching in: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "🎉 $JUN IS NOW LIVE!";
+    }
+  }, 1000);
+</script>
+
+<style>
+  .scroll-bar {
+    background: #00ff99;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: scroll 25s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .sticky-socials {
+    position: fixed;
+    right: 15px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+  }
+
+  .sticky-socials a {
+    background: #00ff99;
+    color: black;
+    padding: 10px 14px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  .sticky-socials a:hover {
+    background: #00e68a;
+    transform: scale(1.05);
+  }
+
+  footer {
+    background: #001a10;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 60px;
+  }
+</style>
+
+<style>
+  .scroll-wrapper {
+    overflow: hidden;
+    background: #00ff99;
+    padding: 12px 0;
+  }
+
+  .scroll-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 30s linear infinite;
+  }
+
+  .scroll-track img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+</style>
+
+<div class="scroll-wrapper">
+  <div class="scroll-track">
+    <!-- Dubbele set afbeeldingen voor naadloos effect -->
+    <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-3.png">
+     <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-4.png">
+ <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-5.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-6.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-7.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-8.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-9.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-10.png">
+ <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-11.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-12.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-13.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-14.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-15.png">
+
+    <!-- Herhaling voor naadloze loop -->
+    <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-3.png">
+     <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-4.png">
+ <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-5.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-6.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-7.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-8.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-9.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-10.png">
+ <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-11.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-12.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-13.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-14.png">
+<img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-15.png">
+  </div>
+</div>
+
+
+<div class="sticky-socials">
+  <a href="https://dexscreener.com/ethereum?rankBy=trendingScoreH6&order=desc&boosted=1"_blank">🔥 Buy $COCO</a>
+  <a href="https://x.com/Bobin_Crypto" target="_blank">🐦 Follow Twitter (X)</a>
+   <a href="https://dexscreener.com/ethereum?rankBy=trendingScoreH6&order=desc&boosted=1" target="_blank">📈 View Chart</a>
+<a href="https://bobincrypto2025.github.io/whitepaper/"
+   target="_blank">📄 Whitepaper
+  <a href="https://bobincrypto2025.github.io/howtobuy" target="_blank" class="how-to-buy-btn">🛒 How to Buy</a>
+</a>
+</div>
+
+<footer>
+  This is not financial advice — it's a movement.<br>
+  © Bobin Crypto 2025. All rights reserved.
+</footer>
+
+</body>
+</html>
+
+<div style="text-align:center; margin-top:40px;">
+  <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-1.png" alt="COCO extra 1" style="max-width:80%; margin-bottom:20px;" />
+  <img src="https://raw.githubusercontent.com/BobinCrypto2025/images/main/bobin-2.png" alt="COCO extra 2" style="max-width:80%;" />
+</div>
